@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+
+/* COMMON STYLES ============ */
+
+.primary-btn{
+    color:white;
+    background-color: #FF42A5;
+    padding:10px 30px;
+    border:none;
+    border-radius: 48px;
+}
