@@ -130,6 +130,61 @@ nav li .fa-youtube{
 
 
 
+/* Main Section Styles ==================== */
+
+
+/* Online game section styles ========== */
+.online-game-section{
+    margin:110px;
+}
+
+.online-game-section h1{
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.online-game-section span{
+    background:linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.online-game-section .desc{
+    color:#0b0223d3;
+    text-align: center;
+    margin-bottom:40px;
+}
+.cards{
+    max-width:1600px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:10px;
+}
+.card{
+    position: relative;
+}
+.card p{
+    color:#0b0223dd;
+}
+.card .play-icon{
+    position: absolute;
+    top:34%; 
+    left:35%; 
+    text-align: center;
+    opacity: 0;
+
+}
+.card .play-icon .fa-solid{
+    color:white;
+    font-size: 50px;
+}
+.card .play-icon h3{
+    color:#F948B2;
+}
+.card:hover img{
+    filter: brightness(0.5);
+}
 
 
 
@@ -153,21 +208,10 @@ nav li .fa-youtube{
 
 
 
+/* 
+FOOTER STYLES ============= */
 
-
-
-
-
-
-
-
-
-
-
-
-/* FOOTER STYLES ============= */
-
-/* footer{
+footer{
     height: 350px;
     background-color: #0B0223;
     color:white;
@@ -207,4 +251,4 @@ footer .content .logo span{
 .content p{
     font-size: 11px;
     color:rgba(255, 255, 255, 0.559);
-} */
+}
