@@ -162,28 +162,39 @@ nav li .fa-youtube{
     gap:10px;
 }
 .card{
+    cursor: pointer;
     position: relative;
 }
 .card p{
     color:#0b0223dd;
-}
-.card .play-icon{
-    position: absolute;
-    top:34%; 
-    left:35%; 
-    text-align: center;
-    opacity: 0;
-
 }
 .card .play-icon .fa-solid{
     color:white;
     font-size: 50px;
 }
 .card .play-icon h3{
-    color:#F948B2;
+    color:#ef30a3;
+}
+
+.card .overlay{
+    position: absolute;
+    top:34%; 
+    left:30%; 
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s;
+
+}
+.card .play-icon{    
+    position: absolute;
+    width: 128px;
+}
+.card:hover .overlay{
+    opacity: 0.9;
 }
 .card:hover img{
-    filter: brightness(0.5);
+    filter: brightness(0.4);
+    transition: all 0.3s;
 }
 
 
@@ -292,7 +303,11 @@ footer .content .logo span{
 }
 .content .features{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap:30px;
+    color:rgba(255, 255, 255, 0.859);
+    padding-left:0;
 }
 .content .features li , .icons, .terms{
     list-style: none;
@@ -300,6 +315,7 @@ footer .content .logo span{
 .content .icons{
     display: flex;
     gap:25px;
+    flex-wrap: wrap;
     font-size: 24px;
 }
 .content .terms{
@@ -321,6 +337,8 @@ footer .content .logo span{
 /* RESPONSIVE DESIGN =================== */
 
 /* Responsive For Mobile -------- */
+
+
 
 @media screen and (max-width:576px){
     header nav{
@@ -425,7 +443,7 @@ footer .content .logo span{
         margin-left:25%;
     }
     .category-section{
-        height: 200px;
+        height: 260px;
         margin-top:60px;
     }
    .category-section .all-games{
@@ -444,5 +462,59 @@ footer .content .logo span{
     }
     .games h3{
         font-size: 8px;
+    } 
+    footer{
+        height: 400px;
+    }
+    footer .logo h2{
+        font-size: 25px;
+    }
+    footer .logo img{
+        width:60px;
+    }
+    footer .content .features{
+        font-size: 15px;
+       width:320px;
+       row-gap:10px;
+    }
+    .content .icons{
+        width:130px;
+        font-size: 20px;
+    }
+
+}
+
+
+
+/* RESPONSIVE FOR TABLET ============= */
+
+@media screen and (min-width:577px) and (max-width:960px){
+
+    .cards{
+        max-width:1600px;
+        margin:auto;
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap:15px;
+        text-align: center;
+    }
+    .card img{
+        width:82%;
+    }
+    .card p{
+        font-size: 14px;
+    }  
+    .category-section .all-games{
+        width:95%;
+       display: grid;
+       gap:7px;
+       row-gap: 18px;
+       grid-template-columns: repeat(3, 1fr);
+   }
+   .games img{
+    width:24%;
+    }
+    .games h3{
+        font-size: 15px;
     } 
 }
