@@ -194,11 +194,12 @@ nav li .fa-youtube{
 .play-instantly-section{
 
     display: flex;
-    justify-content: space-around;
-    gap:120px;
+    justify-content: space-between;
+    gap:10%;
 }
 .play-content{
     max-width:380px;
+    margin-left:15%;
 }
 .play-content h1{
     font-weight: 700;
@@ -209,6 +210,7 @@ nav li .fa-youtube{
 }
 .play-image{
     position: relative;
+    margin-right:10%;
 }
 .play-image .horse-img{
     width:100%;
@@ -222,10 +224,43 @@ nav li .fa-youtube{
 
 
 
+/* CATEGory - Section Styles ============== */
 
+.category-section{
+    background:linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    height: 420px;
+    margin-top:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.category-section .all-games{
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:auto;
+    gap:50px;
+}
 
-
+.category-section .games{
+    min-width:fit-content;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    background-color: white;
+    border:1px solid #ffffff;
+    padding:2px 8px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.games:hover{
+    border-color: #F948B2;
+    color:#e933af;
+}
 
 
 
