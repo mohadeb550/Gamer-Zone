@@ -26,11 +26,6 @@ body{
 }
 
 
-
-
-
-
-
  /* Header Styles ============= */
 
 header nav{
@@ -134,6 +129,7 @@ nav li .fa-youtube{
 
 
 /* Online game section styles ========== */
+
 .online-game-section{
     margin:110px;
 }
@@ -235,7 +231,7 @@ nav li .fa-youtube{
 
 
 
-/* CATEGory - Section Styles ============== */
+/* CateGory - Section Styles ============== */
 
 .category-section{
     background:linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
@@ -272,9 +268,6 @@ nav li .fa-youtube{
     border-color: #F948B2;
     color:#e933af;
 }
-
-
-
 
 
 
@@ -317,6 +310,9 @@ footer .content .logo span{
     gap:25px;
     flex-wrap: wrap;
     font-size: 24px;
+}
+footer .content .icons .fa-brands{
+    color:rgba(255, 255, 255, 0.815);
 }
 .content .terms{
     display: flex;
