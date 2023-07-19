@@ -187,6 +187,38 @@ nav li .fa-youtube{
 }
 
 
+/* Play instantly Section Styles ======== */
+
+
+
+.play-instantly-section{
+
+    display: flex;
+    justify-content: space-around;
+    gap:120px;
+}
+.play-content{
+    max-width:380px;
+}
+.play-content h1{
+    font-weight: 700;
+    font-size: 47px;
+}
+.play-content span{
+    color:#e933af;
+}
+.play-image{
+    position: relative;
+}
+.play-image .horse-img{
+    width:100%;
+}
+.play-image .queen-img{
+    width:50%;
+    position: absolute;
+    top:52%;
+    right:75%;
+}
 
 
 
