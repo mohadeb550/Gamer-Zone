@@ -123,6 +123,34 @@ nav li .fa-youtube{
     width:100%;
 }
 
+/* WE ARE GAMER STYLES ----------- */
+
+.we-are-gamer{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.gamers-content{
+    max-width: 1400px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:30px;
+    text-align: right;
+    padding:50px 50px;
+}
+.gamers-content h1{
+    font-size: 38px;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gamers-content span{
+    font-size: 18px;
+    font-weight: 600;
+    color:rgba(0, 0, 0, 0.71);
+}
+
 
 
 /* Main Section Styles ==================== */
@@ -389,6 +417,34 @@ footer .content .icons .fa-brands{
         padding:7px 25px;
     }
 
+    .gamers-content{
+        flex-direction: column;
+        gap:0;
+        padding:30px 20px;
+        text-align: left;
+        font-size:0.8rem;
+    }
+    .gamers-content img{
+        width:100%;
+    }
+    .gamers-content h1{
+        font-size: 24px;
+    }
+    .gamers-content button{
+        font-size: 10px;
+        padding:5px 12px;
+    }
+    .gamers-content span{
+        font-size: 13px;
+        font-weight: 600;
+        color:rgba(0, 0, 0, 0.71);
+    }
+    .gamers-content h2{
+        font-size: 16px;
+    }
+
+
+
     .online-game-section{
         margin: 8%;
     }
@@ -512,5 +568,19 @@ footer .content .icons .fa-brands{
     }
     .games h3{
         font-size: 15px;
-    } 
+    }
+    .gamers-content{
+        flex-direction: column;
+        gap:0;
+        padding:30px 20px;
+        text-align: left;
+        font-size:0.8rem;
+        text-align: center;
+    }
+    .gamers-image{
+        text-align: center;
+    }
+    .gamers-content img{
+        width:85%;
+    }
 }
