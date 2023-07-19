@@ -355,7 +355,7 @@ footer .content .logo span{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding:10%;
+        padding:10% 0;
         font-size: 0.8rem;
     }
     .banner-image{
@@ -401,5 +401,48 @@ footer .content .logo span{
         font-size: 14px;
     }
         
-    
+    .play-instantly-section{
+
+        justify-content: space-between;
+        flex-direction: column;
+        gap:10%;
+        text-align: center;
+    }
+    .play-content{
+        margin:0 5%;
+    }
+    .play-content h1{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .play-content p{
+        font-size: 13px;
+        margin-top:4px;
+    }
+    .play-image{
+        width:63%;
+        margin:auto;
+        margin-left:25%;
+    }
+    .category-section{
+        height: 200px;
+        margin-top:60px;
+    }
+   .category-section .all-games{
+         width:95%;
+        display: grid;
+        gap:7px;
+        row-gap: 13px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .all-games .games{
+        gap:3px;
+        padding: 0 4px;
+    }
+    .games img{
+        width:28%;
+    }
+    .games h3{
+        font-size: 8px;
+    } 
 }
