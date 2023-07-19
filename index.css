@@ -267,21 +267,13 @@ nav li .fa-youtube{
 
 
 
-
-
-
-
-
-
-
-
-/* 
-FOOTER STYLES ============= */
+/* FOOTER STYLES ============= */
 
 footer{
-    height: 350px;
+    height: 360px;
     background-color: #0B0223;
     color:white;
+    padding:25px 0;
 }
 footer .content{
     display: flex;
@@ -293,6 +285,7 @@ footer .content .logo{
     align-items: center;
     gap:10px;
     color:white;
+    font-size: 28px;
 }
 footer .content .logo span{
     color:#FF42A5;
@@ -306,7 +299,7 @@ footer .content .logo span{
 }
 .content .icons{
     display: flex;
-    gap:20px;
+    gap:25px;
     font-size: 24px;
 }
 .content .terms{
@@ -318,4 +311,95 @@ footer .content .logo span{
 .content p{
     font-size: 11px;
     color:rgba(255, 255, 255, 0.559);
+}
+
+
+
+
+
+
+/* RESPONSIVE DESIGN =================== */
+
+/* Responsive For Mobile -------- */
+
+@media screen and (max-width:576px){
+    header nav{
+        height: 100px;
+        flex-direction: column;
+        padding:5% 1% ;
+        font-size: 0.9rem;
+        height: 180px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap:20px;
+        padding-left:0;
+    }
+    nav .logo h1{
+        font-size: 25px;
+        margin:0;
+    }
+    nav .logo img{
+        width:55px;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap:7%;
+    }
+    .banner-content{
+        background-image: url("images/Group 14.png");
+        background-size: 100%;
+        width:88%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:10%;
+        font-size: 0.8rem;
+    }
+    .banner-image{
+        text-align: center;
+    }
+    .banner-image img {
+        width: 73%;
+    }
+    .banner-info .play-text{
+        font-size: 26px;
+    }
+    .banner-info .goat-text{
+        font-size: 48px;
+    }
+    .banner-info button{
+        font-size: 12px;
+        padding:7px 25px;
+    }
+
+    .online-game-section{
+        margin: 8%;
+    }
+    .online-game-section h1{
+        font-size: 22px;
+        margin-bottom:0;
+    }
+    .online-game-section .desc{
+        font-size: 13px;
+        margin: 6px 0 30px;
+    }
+    .cards{
+        max-width:1600px;
+        margin:auto;
+        display: grid;
+        grid-template-columns:1fr;
+        gap:10px;
+        text-align: center;
+    }
+    .card img{
+        width:85%;
+    }
+    .card p{
+        font-size: 14px;
+    }
+        
+    
 }
